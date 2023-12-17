@@ -1,0 +1,8 @@
+<div class="select-compiler-language">
+    <mat-select [(ngModel)]="languageCompiler">
+        <mat-option value="0">JavaScript</mat-option>
+        <mat-option value="1">CSharp</mat-option>
+    </mat-select>
+    <button [routerLink]="['/compiler']" [queryParams]="{ 'languageCompiler': languageCompiler }" [disabled]="">Go to
+        compier</button>
+</div>

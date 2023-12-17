@@ -1,0 +1,12 @@
+<div mat-dialog-title>
+    <span>Результат компиляции</span>
+    <button mat-icon-button [mat-dialog-close]="false">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+
+<div class="p-3" mat-dialog-content>
+    <div class="bg-gray-dark flex flex-row items-stretch">
+        <p class="h-48 text-primary-50 font-bold">{{ compileResult }}</p>
+    </div>
+</div>
